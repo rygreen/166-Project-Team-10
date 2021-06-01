@@ -24,10 +24,10 @@ s "Nirav! I have to give it to you there, regardless of the result, you were the
 "Nirav sees Sai and walks up to him."
 
 menu:
-    n "Good game, my friend.":
+    "Good game, my friend.":
         jump choice1_friendly
 
-    n "Look at the score, the lot’s ours! You should find somewhere else to play.":
+    "Look at the score, the lot’s ours! You should find somewhere else to play.":
         jump choice1_mean
 
 label choice1_friendly:
@@ -39,7 +39,7 @@ label choice1_friendly:
         s "That distraction was quite underhanded. I hope to see less of that in the future though."
         n "I'm sorry, I really wanted to win the game for my group."
 
-    jump choice1_done
+    jump c1done
 
 label choice1_mean:
     s "(Shying away) Understood. Deal’s a deal."
@@ -48,10 +48,10 @@ label choice1_mean:
         s "That distraction was dirty. You knew how I feel about it."
         n "Hey, game's a game. Our lot now."
 
-    jump choice1_done
+    jump c1done
 
 
-label choice1_done:
+label c1done:
 
 "Everyone starts parting ways. While packing up, Nirav spots a familiar figure amidst the leaving crowd."
 
@@ -60,10 +60,10 @@ n "Father? What are you doing here?"
 f "What am I doing here? What are you doing here!? Where did you learn to play cricket?"
 
 menu:
-    n "I’m the best!":
+    "I’m the best!":
         jump choice2_best
 
-    n "I made some friends in my time away.":
+    "I made some friends in my time away.":
         jump choice2_friends
 
 label choice2_best:
@@ -71,17 +71,17 @@ label choice2_best:
 
     n "I... uh... let's go home!"
 
-    jump choice2_done
+    jump c2done
 
 label choice2_friends:
     f "Are these the friends on the lot here? They seem alright, although they should know better about where to play."
 
     n "This is a great spot, we just finished a match too."
 
-    jump choice2_done
+    jump c2done
 
 
-label choice2_done:
+label c2done:
 
 n "Can I play more?"
 
@@ -112,10 +112,10 @@ n "Sure, here you go."
 f "Thank you. I don’t want to be late today, I have a very important meeting. Don’t be out for too long today."
 
 menu:
-    n "Don’t worry I’ll be home in time for dinner.":
+    "Don’t worry I’ll be home in time for dinner.":
         jump choice3_good
 
-    n "It’ll only be a few weeks, it’s fiiiiine.":
+    "It’ll only be a few weeks, it’s fiiiiine.":
         jump choice3_funny
 
 label choice3_good:
@@ -123,17 +123,17 @@ label choice3_good:
 
     n "Interesting, good luck! I'm looking forward to meeting my friends again."
 
-    jump choice3_done
+    jump c3done
 
 label choice3_funny:
     f "Hmph, and I suppose I'll find you with a new gang of ruffians on a random plot of land again too."
 
     n "Hey! I picked up a few skills and friends along the way. We're meeting again today as well."
 
-    jump choice3_done
+    jump c3done
 
 
-label choice3_done:
+label c3done:
 
 f "Come sooner please. I have to go, have a good day."
 
@@ -157,4 +157,4 @@ v "Yeah, just for some apartments right?"
 
 n "Yes, but the company that’s developing the land… now I know why my dad found me here. He’s a project manager there!"
 
-    return
+return
