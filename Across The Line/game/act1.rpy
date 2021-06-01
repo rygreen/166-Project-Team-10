@@ -31,7 +31,7 @@ image square = "square.png"
 
 label act1:
 show crowd1
-with crowd2
+show crowd2
 show Nirav
 n "Mom? Dad?"
 "Unknown Voice: Got it."
