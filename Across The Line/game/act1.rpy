@@ -17,15 +17,15 @@ show Nirav at middle
 n "Mom? Dad?"
 "Unknown Voice: Got it."
 menu:
-"Option 1":
-	n "Who are you?"
-	"Nirav's voice woke up the man who’s sleeping and was forced to faint again."	
-"Option 2":
-	"Nirav keep silence and observe surrounding."
-	"Nirav see two men at the front of the car, one is driving the car and the other is sleeping. "
-	m"(talking to someone through the phone) Hey, we're about to reach the Delhi's outskirts."
+    "Option 1" :
+        n "Who are you?"
+        "Nirav's voice woke up the man who’s sleeping and was forced to faint again."
+    "Option 2" :
+        "Nirav keep silence and observe surrounding."
+        "Nirav see two men at the front of the car, one is driving the car and the other is sleeping. "
+        m"(talking to someone through the phone) Hey, we're about to reach the Delhi's outskirts."
 label after_menu:
-	"The car kept moving until it reached a petrol station in the outskirts of Delhi. "
+"The car kept moving until it reached a petrol station in the outskirts of Delhi. "
 show Unknown Man1 at middle
 m "Hey, I’m going to get some Thali, keep an eye on this kid."
 show Unknown Man2 at middle
@@ -57,7 +57,7 @@ n "I’m not quite sure."
 n "I just woke up in the back of some truck."
 k "Hmm, I see."
 k "Where are you from?"
-n "Mumbai. But I got lost...”
+n "Mumbai. But I got lost..."
 "Nirav’s stomach is making noise"
 n "Sorry… I haven’t eaten anything for the whole day."
 k "Wow that’s really far."
@@ -69,4 +69,4 @@ n "My name is Nirav!"
 
     
 
-    jump act2
+jump act2
