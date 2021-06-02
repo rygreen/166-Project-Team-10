@@ -8,41 +8,60 @@ define v = Character("Vinay")
 define s = Character("Sai")
 define d = Character("Drishti")
 
-
 # The game starts here.
 
 label act3:
     v "Alright Nirav, we need to start training for the match. Do you know how to play cricket?"
+
+    $ practice_time = 120
+
     menu:
         "Yes":
             v "Well it's time to practice then!"
+            v "We only have 2 hours to practice before we have to get out of here. What do you want to work on first?"
             jump practice
         "No":
             v "Explains cricket"
+            v "We only have 2 hours to practice before we have to get out of here. What do you want to work on first?"
             jump practice
 
 label practice:
-    v "We only have 2 hours to practice before we have to get out of here. What do you want to work on first?"
     menu:
         "Batting Practice (30 minutes)":
             v "Alright, let's get ready to do some batting!"
             "The boys take turns batting after each other."
             "As the practice goes on, Nirav already feels like he's getting better at batting. After 30 minutes goes by, Vinay calls the gang in to see what they are doing next."
+            $ previous_time = practice_time;
+            $ practice_time = (previous_time - 30);
+            if practice_time > 0:
+                jump practice
             jump practice_over
         "Fielding Practice (30 minutes)":
             v "Alright, everyone take the field and get ready to move!"
             "Vinay hits balls into the field as the boys run to catch and field to get quicker at beating the runners."
             "As the practice goes on, Nirav feels ready for fielding in the big game. After 30 minutes goes by, Vinay calls the gang in to see what they are doing next."
+            $ previous_time = practice_time;
+            $ practice_time = (previous_time - 30);
+            if practice_time > 0:
+                jump practice
             jump practice_over
         "Bowling Practice (30 minutes)":
             v "Alright, let’s see who can be our bowlers for the game."
             "The boys take turns bowling and seeing who can throw the fastest."
             "Nirav gives it a shot, feeling confident if he gets called in for the game. After 30 minutes goes by, Vinay calls the gang in to see what they are doing next."
+            $ previous_time = practice_time;
+            $ practice_time = (previous_time - 30);
+            if practice_time > 0:
+                jump practice
             jump practice_over
         "Running Practice (30 minutes)":
             v "Alright, we need to be ready to run when it's our turn to bat."
             "The boys race each other up and down the field to see who can run the fastest and the longest."
             "Nirav feels ready to give it his all in the big game, even though he is worn out now. After 30 minutes goes by, Vinay calls the gang in to see what they are doing next."
+            $ previous_time = practice_time;
+            $ practice_time = (previous_time - 30);
+            if practice_time > 0:
+                jump practice
             jump practice_over
 
 label practice_over:
