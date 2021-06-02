@@ -79,6 +79,7 @@ label choice1_mean:
 
 label c1done:
 hide nbasenormal
+hide basesai
 "Everyone starts parting ways. While packing up, Nirav spots a familiar figure amidst the leaving crowd."
 show nbasenormal
 n "Father? What are you doing here?"
