@@ -24,7 +24,7 @@ image petrol station = im.Scale("petrol station.png", 1280, 720)
 image roads = im.Scale("roads.png", 1280, 720)
 image square = im.Scale("square.png", 1280, 720)
 image black = im.Scale("black.png", 1280, 720)
-mage cricketlot = im.Scale("cricketLot.png", 1280, 720)
+image cricketlot = im.Scale("cricketLot.png", 1280, 720)
 
 
 # The game starts here.
