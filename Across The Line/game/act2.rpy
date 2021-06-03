@@ -105,7 +105,7 @@ show sai_casual
 "Unknown" "Oh no!" with hpunch
 hide sai_casual
 show sai_casual_sad
-"Unknown" "You're bleeding! Are you okay, oh my god, what are we gonna do ?!"
+"Unknown" "You're bleeding! Are you okay, oh my god, what are we gonna do?!"
 "Unknown" "Here, take this bandaid."
 hide sai_casual_sad
 
@@ -133,7 +133,7 @@ label choice2_no:
     n "I don’t know you."
     hide nirav
     show sai_casual
-    s "I’m Sai , now can you please put on the bandaid , blood makes me queasy."
+    s "I’m Sai, now can you please put on the bandaid , blood makes me queasy."
     hide sai_casual
     "Nirav takes bandaid"
 

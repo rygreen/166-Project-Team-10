@@ -43,31 +43,31 @@ scene black
 "Unknown Voice: Got it."
 hide black
 scene inside vehicle
-"Nirav woke up in a vehicle in panic."
+"Nirav wakes up in a vehicle in panic."
 menu:
     "(Ask)Who are you?":
-        "Nirav's voice woke up the man who’s sleeping and was forced to faint again."
+        "Nirav's voice wakes up the man who is sleeping and was knocked out again."
     "Keep silence and observe surrounding":
         "Nirav see two men at the front of the car, one is driving the car and the other is sleeping. "
-        m"(talking to someone through the phone) Hey, we're about to reach the Delhi's outskirts."
+        m"(talking to someone through the phone) Hey, we're about to reach Delhi's outskirts."
 label after_menu:
-"The car kept moving until it reached a petrol station in the outskirts of Delhi. "
+"The car continues moving until it reached a petrol station in the outskirts of Delhi. "
 hide inside vehicle
 scene petrol station
 show unknown man1
 m "Hey, I’m going to get some Thali, keep an eye on this kid."
 hide unknown man1
 show unknown man2
-u "relax bro, he’s fainted. Bring me some Nans!"
+u "Relax bro, he’s fainted. Bring me some Naan!"
 hide unknown man2
 show unknown man1
 m "Okay, I’ll be right back."
 hide unknown man1
-"several minutes later"
+"Several minutes later"
 show unknown man2
 u "Damn, what’s taking him so long?"
 hide unknown man2
-"the man leaves, Nirav wakes up and found out the door isn’t locked"
+"The man leaves, Nirav wakes up and found out the door isn’t locked."
 "Shouts from far away"
 show unknown man1
 m "Hey man, don’t rush me!"
@@ -80,15 +80,15 @@ hide unknown man2
 show Nirav
 n "It’s my only chance…"
 hide Nirav
-"Nirav opened the door and ran quickly to the wild"
+"Nirav opens the door and runs quickly into the outskirts."
 hide petrol station
 scene roads
-"Nirav finally reached Delhi’s downtown"
+"Nirav finally reaches Delhi’s downtown."
 hide roads
 scene inside restaurant
-n "(hungry and tired in front of a restaurant) “ I have to get some food…"
+n "(Hungry and tired in front of a restaurant) “ I have to get some food…"
 show waiter
-n "(talked to the waiter) “Please, can you give me some food? I’m starving. I don’t have any money but I can work for you."
+n "(Talking to the waiter) “Please, can you give me some food? I’m starving. I don’t have any money but I can work for you."
 w "Sorry pal, we’re not a charity."
 hide inside restaurant
 hide waiter
@@ -119,7 +119,7 @@ n "Sorry… I haven’t eaten anything for the whole day."
 hide Nirav
 show Vinay
 k "Wow that’s really far."
-"Kids whispered from a second"
+"The other kids whisper amongst themselves for a little bit, occasionally stealing a glance at Nirav."
 k "Hey, do you want to join us? We can get you some food and a place to sleep."
 hide Vinay
 show Nirav
@@ -132,6 +132,6 @@ show Nirav
 n "My name is Nirav!"
 hide Nirav
 
-    
+
 
 jump act2
