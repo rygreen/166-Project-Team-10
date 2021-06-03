@@ -62,7 +62,9 @@ label plain:
 label pitch:
 "Boy" "Super Ultra Double Enhanced Curve Ball"
 "He simply tosses the ball to Nirav"
+play sound "audio/bat_hit_ball.mp3"
 "{i}Plack"
+play sound "audio/running.mp3"
 "Nirav easily hits the ball and starts running to the other side"
 n "That was some pitch huh"
 "Boy" "ARGH, just you wait!"
@@ -111,6 +113,7 @@ label distract:
         "But nothing seems to come to his mind."
         "Nirav shouts some taunts at Sai, calling him a loser and lameass"
         "But Sai seems unaffected"
+        play sound "audio/bat_hit_ball.mp3"
         "However, despite the ineffectiveness of Nirav's taunts, Vinay's team still takes the victory by a narrow margin."
         jump after
 
@@ -124,6 +127,7 @@ label fair:
     v "Look at him, he's fuming. I bet he'll break your arm."
     v "You'll never get to play cricket again."
     "But despite Vinay's tauntings, Sai remains unwavered."
+    play sound "audio/bat_hit_ball.mp3"
     "Luckily for Vinay, the game turned out in his favor after all"
     "Even by a small margin."
     jump after
