@@ -48,7 +48,9 @@ define build.name = "AcrossTheLine"
 define config.has_sound = True
 define config.has_music = True
 define config.has_voice = True
-
+define config.default_music_volume = 0.5
+define config.default_sfx_volume = 0.6
+define config.default_voice_volume = 1.0
 
 ## To allow the user to play a test sound on the sound or voice channel,
 ## uncomment a line below and use it to set a sample sound to play.
