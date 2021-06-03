@@ -28,15 +28,34 @@ label act5:
 scene lot
 "As the game concludes, the onlookers start clearing out, leaving the kids to themselves once more."
 show basesai
-s "Nirav! I have to give it to you there, regardless of the result, you were the star of your team!" #if training has boolean want to have it say ’s batting/bowling/fielding
+
+if best_trait == 1:
+    s "Nirav! I have to give it to you there, regardless of the result, you were the star of your team's batting lineup!" #if training has boolean want to have it say ’s batting/fielding/bowling/running
+    s "You hit some really good ones, and we had a tough time getting you out."
+
+if best_trait == 2:
+    s "Nirav! I have to give it to you there, regardless of the result, you were the star of your team's fielding plays!"
+    s "A couple of us were shocked you made some of those catches and long distance throws in the game"
+
+if best_trait == 3:
+    s "Nirav! I have to give it to you there, regardless of the result, you were a superb bowler!"
+    s "I almost couldn't see some of those balls you threw."
+
+if best_trait == 4:
+    s "Nirav! I have to give it to you there, regardless of the result, you're a speed demon!"
+    s "Look at you, scoring runs back and forth, running like Sonic."
+
+s "Looks like you practiced a decent bit before the match. It definetly paid off."
+hide basesai
+"Nirav blushes a little bit at these remarks."
+show nbasenormal
+n "Thanks, I don't know what to say. I had some good friends to help me out."
 
 "Drishti storms off but Sai stays behind."
 
 "Vinay is busy celebrating with his friends."
 
 "Nirav sees Sai and walks up to him."
-hide basesai
-show nbasenormal
 menu:
 
     "Good game, my friend.":
