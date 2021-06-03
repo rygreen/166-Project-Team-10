@@ -37,11 +37,8 @@ show crowd2 with fade
 hide crowd2
 show Nirav
 n "Mom? Dad?"
-hide Nirav
-hide square
 scene black
 "Unknown Voice: Got it."
-hide black
 scene inside vehicle
 "Nirav wakes up in a vehicle in panic."
 menu:
@@ -52,7 +49,6 @@ menu:
         m"(Talking to someone through the phone) Hey, we're about to reach Delhi's outskirts."
 label after_menu:
 "The car continues moving until it reached a petrol station in the outskirts of Delhi. "
-hide inside vehicle
 scene petrol station
 show unknown man1
 m "Hey, I’m going to get some Thali, keep an eye on this kid."
@@ -85,28 +81,23 @@ show Nirav
 n "It’s my only chance…"
 hide Nirav
 "Nirav opens the door and runs quickly into the outskirts."
-hide petrol station
 scene roads
 "Nirav finally reaches Delhi’s downtown."
-hide roads
 scene inside restaurant
 n "(Hungry and tired in front of a restaurant) “ I have to get some food…"
 show waiter
 n "(Talking to the waiter) “Please, can you give me some food? I’m starving. I don’t have any money but I can work for you."
 w "Sorry pal, we’re not a charity."
-hide inside restaurant
-hide waiter
 scene square
 show Nirav
 "Nirav leaves the restaurant, very disappointed, wandering in the square"
-hide square
 scene cricketlot
 show Vinay1
-"several kids grouped there playing Cricket"
+"Several kids are seen playing Cricket"
 k "Hey! You!"
 hide Vinay1
 show Nirav
-n "me?"
+n "Me?"
 hide Nirav
 show Vinay1
 k "Duh, you. Man, you look terrible. What happened to you?"
@@ -121,7 +112,7 @@ k "Where are you from?"
 hide Vinay1
 show Nirav
 n "Mumbai. But I got lost..."
-"Nirav’s stomach is making noise"
+"Nirav’s stomach is making noises"
 n "Sorry… I haven’t eaten anything for the whole day."
 hide Nirav
 show Vinay1

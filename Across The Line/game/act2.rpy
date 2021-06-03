@@ -41,8 +41,8 @@ with Dissolve(.5)
 "{i}At the restaurant{i}" #maybe we don't need the trasnsition and only use the background to convey them inside a restaurant
 
 show vinay_casual
-v "Now, before I can help you get home you have to run some errands for me. You help me , and I help you."
-v "You see, We were trying to play cricket today, but it seems like some no good bums stole all our equipment.Now as friends, I think it’d be good for us to help one another out, right?"
+v "Now, before I can help you get home you have to run some errands for me. You help me, and I help you."
+v "You see, We were trying to play cricket today, but it seems like some no good bums stole all our equipment. Now as friends, I think it’d be good for us to help one another out, right?"
 
 hide vinay_casual
 show nirav at left
@@ -90,7 +90,7 @@ scene neigh with fade
 scene ditch
 with Dissolve(.5)
 
-"Nirav's arms are full of stuff and he can't see where he is going. He is completely oblivious to the ditch in front of him"
+"Nirav's arms are full of stuff and he can't see where he is going. He is completely oblivious to the ditch in front of him."
 
 "Bam!!" with vpunch
 
@@ -113,7 +113,7 @@ menu:
     "Take the bandaid":
         jump choice2_yes
 
-    "Don’t take a bandaid from a stranger":
+    "Don’t take a bandaid from the stranger":
         jump choice2_no
 
 label choice2_yes:
@@ -122,7 +122,7 @@ label choice2_yes:
     n "Thank you, Who are you?"
     hide nirav
     show sai_casual
-    s "I’m Sai"
+    s "I’m Sai."
     hide sai_casual
 
     jump choice2_done
@@ -135,7 +135,7 @@ label choice2_no:
     show sai_casual
     s "I’m Sai, now can you please put on the bandaid , blood makes me queasy."
     hide sai_casual
-    "Nirav takes bandaid"
+    "Nirav takes the bandaid."
 
 
     jump choice2_done
@@ -156,9 +156,9 @@ show nirav
 n "No I don't, I was just taking them to some ...friends?"
 hide nirav
 show sai_casual
-s " Oh okay, I can help you! You know, if you want to learn , I can teach you and we can play sometime."
+s " Oh okay, I can help you! You know, if you want to learn, I can teach you and we can play sometime."
 hide sai_casual
-"The two boys begin walking towards the lot"
+"The two boys begin walking towards the lot."
 scene empty_lot with fade
 
 show nirav
@@ -171,7 +171,7 @@ show nirav
 n "Yesterday I got lost, and met this boy who said he would help me get home."
 hide nirav
 show sai_casual_sad
-s " Oh no! That must be so scary, i don’t even know what I would do if I got lost, I would probably cry and.."
+s " Oh no! That must be so scary, i don’t even know what I would do if I got lost, I would probably cry and..."
 hide sai_casual_sad
 show vinay_casual_angry at right
 v "Nirav! Took you long enough! Hey it’s you!"
@@ -183,7 +183,7 @@ show vinay_casual_angry at right
 v "What are you doing here! What are you doing with Nirav?!"
 hide vinay_casual_angry
 show sai_casual_sad at left
-s "Hey guys! Long time no see, but I can explain.."
+s "Hey guys! Long time no see, but I can explain..."
 hide sai_casual_sad
 show vinay_casual_angry at right
 v "GET OUT OF HERE!" with hpunch

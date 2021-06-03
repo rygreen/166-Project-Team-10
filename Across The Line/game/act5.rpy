@@ -168,10 +168,9 @@ hide father
 show nnormal
 n "Sure, here you go."
 
-scene keychain
+show keychain
 
 #show keys with company on keychain
-show father
 f "Thank you. I don’t want to be late today, I have a very important meeting. Don’t be out for too long today."
 scene house
 show nnormal
