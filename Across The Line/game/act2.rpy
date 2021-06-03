@@ -91,7 +91,7 @@ scene ditch
 with Dissolve(.5)
 
 "Nirav's arms are full of stuff and he can't see where he is going. He is completely oblivious to the ditch in front of him."
-
+play sound "audio/fall.mp3"
 "Bam!!" with vpunch
 
 "..Nirav fell and scraped his knee"

@@ -157,6 +157,7 @@ f "Hold your horses. Just wait until we get home."
 hide father
 #show field being closed off as walking home
 scene closedlot with fade
+play sound "audio/fenced_off_lot.mp3"
 "As Nirav and his father head home, it seems that a sign is being put up near the lot."
 scene house with fade
 "Nirav reunites with his parents at home and catches them up on his adventure in the city. After dinner he proceeds to go to bed."
@@ -209,6 +210,7 @@ f "Come sooner please. I have to go, have a good day."
 "As both Nirav and his father head to their destinations, we see a huddled group of Nirav's friends at the cricket field, now fenced off."
 scene closedlot
 #show background of closed off lot
+play sound "audio/construction.mp3"
 show nnormal
 n "What’s up guys? Why are we crowded here?"
 hide nnormal
