@@ -24,7 +24,7 @@ image petrol station = im.Scale("petrol station.png", 1280, 720)
 image roads = im.Scale("roads.png", 1280, 720)
 image square = im.Scale("square.png", 1280, 720)
 image black = im.Scale("black.png", 1280, 720)
-
+image cricketlot = im.Scale("cricketLot.png", 1280, 720)
 
 
 # The game starts here.
@@ -71,11 +71,15 @@ hide unknown man2
 "Shouts from far away"
 show unknown man1
 m "Hey man, don’t rush me!"
+hide unknown man1
 show unknown man2
 u "Why don’t you hurry the hell up then"
+hide unknown man2
+show unknown man1
 m "Shouldn’t you be watching the kid?"
-u "Don’t worry about him, he’s knocked out cold."
 hide unknown man1
+show unknown man2
+u "Don’t worry about him, he’s knocked out cold."
 hide unknown man2
 show Nirav
 n "It’s my only chance…"
@@ -93,7 +97,10 @@ w "Sorry pal, we’re not a charity."
 hide inside restaurant
 hide waiter
 scene square
+show Nirav
 "Nirav leaves the restaurant, very disappointed, wandering in the square"
+hide square
+scene cricketlot
 show Vinay1
 "several kids grouped there playing Cricket"
 k "Hey! You!"
@@ -131,7 +138,6 @@ hide Vinay1
 show Nirav
 n "My name is Nirav!"
 hide Nirav
-
 
 
 jump act2
