@@ -234,7 +234,7 @@ show sai_casual_sad
 s "Sorry Nirav,I guess I'll see you tomorrow."
 hide sai_casual_sad
 
-hide empty_lot
+
 scene black
 n "({i}What was that all about? What's up with this rivalry. Sucks that I can't hang out with Sai more{i})"
 
