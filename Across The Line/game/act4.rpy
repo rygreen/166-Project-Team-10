@@ -1,7 +1,6 @@
 # The script of the game goes in this file.
 
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
+# Sounds from Zapsplat.com
 
 define n = Character("Nirav")
 define v = Character("Vinay")
@@ -54,24 +53,56 @@ n "That was some pitch huh"
 
 "The game proceeds, Nirav scores easy runs while Drishti shouts at his teammates"
 d "You idiots! Stop losing to this damn noobie!"
-d "I'll beat all of you up if you lose this game for us!"
-"What's after this is unfinished"
+d "I'll beat all of you to a pulp if you lose this game for me!"
+
+"As the ball flies through the air and the bat switches sides. Vinay pulls Nirav to the side."
 v "Hey, I've been watching that Sai guy, and I think he's our key to victory."
-v "Look at him, he looks nervous as all hell."
+v "We might be ahead in points right now, but he could let them catch up at any moment."
 v "He's good, but not strong mentally."
 v "Get him to crack, and this will be our game."
-"Nirav steps up as the bowler"
 
+"Nirav steps up to the bowler position, preparing to throw"
 
-if blood_flag:
-    "Nirav remembers Sai's uneasiness towards blood."
-    "He bites his hand hard, drawing blood."
-    "Nirav smears his blood all over his hand, and waves it at Sai"
+menu:
+    "Distract Sai":
+        jump distract
+    "Play Fair":
+        jump fair
+label distract:
+    $ blood_trick = True
+    if blood_flag:
+        "Nirav stares at Sai, trying to think of a way to throw him off his game."
+        "He suddenly remembers Sai's uneasiness towards blood when he refused Sai's bandaid yesterday."
+        "Nirav bites his hand hard, drawing blood."
+        "Nirav smears his blood all over his hand and the ball, then smiles and gives Sai a little wave. Making sure that he can see the blood"
+        "Sai pales and looks sick, and cannot bring him to look at the ball."
+        "Nirav throws the ball at Sai. And Sai, not wanting contact with the bloodied ball, dodges out of the way and lets the ball hit the wicket."
+        "Sai is dismissed from the batting area, since he is now not allowed to score any more runs in the current innings."
+        d "Sai!, WHAT THE HELL ARE YOU DOING?"
+        "Needless to say, the game progresses smoothly after that."
+        "And Vinay's team easily takes the victory"
+        jump after
+    else:
+        "Nirav stares at Sai, trying to think of a way to throw him off his game."
+        "But nothing seems to come to his mind."
+        "Nirav shouts some taunts at Sai, calling him a loser and lameass"
+        "But Sai seems unaffected"
+        "However, despite the ineffectiveness of Nirav's taunts, Vinay's team still takes the victory by a narrow margin."
+        jump after
+
+label fair:
+    $ blood_trick = False
+    "Nirav comtemplates distracting Sai for the victory, but ultimately decides that he does not want to play dirty for his victory"
+    "Nirav bowls the ball at Sai and Sai hits it across the line."
+    "Vinay, disappointed at Nirav's inaction, decides to take a few jabs at unnerving Sai."
+    v "Hey Sai, you ever think about what Drishti will do you guys if you lose?"
+    v "Especially to us."
+    v "Look at him, he's fuming. I bet he'll break your arm."
+    v "You'll never get to play cricket again."
+    "But despite Vinay's tauntings, Sai remains unwavered."
+    "Luckily for Vinay, the game turned out in his favor after all"
+    "Even by a small margin."
     jump after
-else:
-    "Else Text"
-    jump after
-
 
 label after:
     jump act5

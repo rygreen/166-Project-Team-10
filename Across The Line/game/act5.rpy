@@ -53,7 +53,7 @@ label choice1_friendly:
     show nbasenormal
     n "Great idea! I am very fortunate to have met both you and Vinay, although you two are rivals."
 
-    if blood_flag:
+    if blood_trick:
         hide nbasenormal
         show basesai
         s "That distraction was quite underhanded. I hope to see less of that in the future though."
@@ -68,7 +68,7 @@ label choice1_mean:
     show basesai
     s "(Shying away) Understood. Deal’s a deal."
 
-    if blood_flag:
+    if blood_trick:
         s "That distraction was dirty. You knew how I feel about it."
         hide basesai
         show nbasenormal
