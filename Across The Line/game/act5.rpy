@@ -166,6 +166,7 @@ show father
 f "Oh Nirav! You’re up early! Can you grab my keys off the counter for me?"
 hide father
 show nnormal
+play sound "audio/keyjingle.mp3"
 n "Sure, here you go."
 
 show keychain
@@ -188,7 +189,6 @@ label choice3_good:
     hide father
     show nnormal
     n "Interesting, good luck! I'm looking forward to meeting my friends again."
-
     jump c3done
 
 label choice3_funny:
@@ -198,7 +198,6 @@ label choice3_funny:
     hide father
     show nnormal
     n "Hey! I picked up a few skills and friends along the way. We're meeting again today as well."
-
     jump c3done
 
 
