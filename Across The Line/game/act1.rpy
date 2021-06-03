@@ -24,6 +24,7 @@ image petrol station = im.Scale("petrol station.png", 1280, 720)
 image roads = im.Scale("roads.png", 1280, 720)
 image square = im.Scale("square.png", 1280, 720)
 image black = im.Scale("black.png", 1280, 720)
+image cricketlot = im.Scale("cricketLot.png", 1280, 720)
 
 
 
@@ -93,7 +94,11 @@ w "Sorry pal, we’re not a charity."
 hide inside restaurant
 hide waiter
 scene square
+show Nirav
 "Nirav leaves the restaurant, very disappointed, wandering in the square"
+hide Nirav
+hide square
+scene cricketlot
 show Vinay
 "several kids grouped there playing Cricket"
 k "Hey! You!"
