@@ -16,7 +16,7 @@ image waiter = "waiter.png"
 image unknown man1 = "unknown man1.png"
 image unknown man2 = "unknown man2.png"
 image Nirav = "niravHappy.png"
-image Vinay = "vinayCasual.png"
+image Vinay1 = "vinayCasual.png"
 
 image inside vehicle = im.Scale("inside vehicle.png", 1280, 720)
 image inside restaurant = im.Scale("inside restaurant.png", 1280, 720)
@@ -49,7 +49,7 @@ menu:
         "Nirav's voice wakes up the man who is sleeping and was knocked out again."
     "Keep silence and observe surrounding":
         "Nirav see two men at the front of the car, one is driving the car and the other is sleeping. "
-        m"(talking to someone through the phone) Hey, we're about to reach Delhi's outskirts."
+        m"(Talking to someone through the phone) Hey, we're about to reach Delhi's outskirts."
 label after_menu:
 "The car continues moving until it reached a petrol station in the outskirts of Delhi. "
 hide inside vehicle
@@ -94,40 +94,40 @@ hide inside restaurant
 hide waiter
 scene square
 "Nirav leaves the restaurant, very disappointed, wandering in the square"
-show Vinay
+show Vinay1
 "several kids grouped there playing Cricket"
 k "Hey! You!"
-hide Vinay
+hide Vinay1
 show Nirav
 n "me?"
 hide Nirav
-show Vinay
+show Vinay1
 k "Duh, you. Man, you look terrible. What happened to you?"
-hide Vinay
+hide Vinay1
 show Nirav
 n "I’m not quite sure."
 n "I just woke up in the back of some truck."
 hide Nirav
-show Vinay
+show Vinay1
 k "Hmm, I see."
 k "Where are you from?"
-hide Vinay
+hide Vinay1
 show Nirav
 n "Mumbai. But I got lost..."
 "Nirav’s stomach is making noise"
 n "Sorry… I haven’t eaten anything for the whole day."
 hide Nirav
-show Vinay
+show Vinay1
 k "Wow that’s really far."
 "The other kids whisper amongst themselves for a little bit, occasionally stealing a glance at Nirav."
 k "Hey, do you want to join us? We can get you some food and a place to sleep."
-hide Vinay
+hide Vinay1
 show Nirav
 n "(touched) “Thanks...thank you guys…"
 hide Nirav
-show Vinay
+show Vinay1
 k "No problem. What’s your name?"
-hide Vinay
+hide Vinay1
 show Nirav
 n "My name is Nirav!"
 hide Nirav
