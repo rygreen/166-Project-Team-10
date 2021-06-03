@@ -22,17 +22,8 @@ image ditch = "ditch.jpg"
 image drishti = "drishCasual.png"
 image black = "black_background.jpg"
 
-transform rightmost:
-    xalign 0.85
-    yalign 0.0
 
-transform leftmost:
-    xalign 0.10
-    yalign 0.0
 
-transform middle:
-    xalign 0.5
-    yalign 0.0
 
 
 # The game starts here.
@@ -40,7 +31,7 @@ transform middle:
 label act2:
 
 
-show vinay_casual at middle
+show vinay_casual
 v "My name is Vinay, by the way"
 v "Don't worry, I can get you home in no time. But first let's go get something to eat!"
 hide vinay_casual
@@ -54,7 +45,7 @@ v "Now, before I can help you get home you have to run some errands for me. You 
 v "You see, We were trying to play cricket today, but it seems like some no good bums stole all our equipment.Now as friends, I think it’d be good for us to help one another out, right?"
 
 hide vinay_casual
-show nirav at leftmost
+show nirav at left
 menu:
     "Yeah,sure.":
         hide nirav
@@ -65,7 +56,7 @@ menu:
         jump choice1_no
 
 label choice1_yes:
-    show vinay_casual at middle
+    show vinay_casual
     v """Great, now I need you to go find us some of our lost equipment.
      It’s somewhere in the neighborhood.
      We can’t play cricket unless we have our equipment.
@@ -73,7 +64,7 @@ label choice1_yes:
     jump choice1_done
 
 label choice1_no:
-    show vinay_casual at middle
+    show vinay_casual
     v """
         Don’t be that way buddy.
         You just help us find our equipment and then I can finish helping you get home.
@@ -105,11 +96,11 @@ with Dissolve(.5)
 
 "..Nirav fell and scraped his knee"
 
-show nirav_sad at middle
+show nirav_sad
 n "Oww! It hurts! I hate this! I just want to go home!"
 hide nirav_sad
 
-show sai_casual at middle
+show sai_casual
 "Unknown" "Who's there?"
 "Unknown" "Oh no!" with hpunch
 hide sai_casual
@@ -182,44 +173,44 @@ hide nirav
 show sai_casual_sad
 s " Oh no! That must be so scary, i don’t even know what I would do if I got lost, I would probably cry and.."
 hide sai_casual_sad
-show vinay_casual_angry at rightmost
+show vinay_casual_angry at right
 v "Nirav! Took you long enough! Hey it’s you!"
 hide vinay_casual_angry
-show sai_casual_sad at leftmost
+show sai_casual_sad at left
 s "Oh no..."
 hide sai_casual_sad
-show vinay_casual_angry at rightmost
+show vinay_casual_angry at right
 v "What are you doing here! What are you doing with Nirav?!"
 hide vinay_casual_angry
-show sai_casual_sad at leftmost
+show sai_casual_sad at left
 s "Hey guys! Long time no see, but I can explain.."
 hide sai_casual_sad
-show vinay_casual_angry at rightmost
+show vinay_casual_angry at right
 v "GET OUT OF HERE!" with hpunch
 hide vinay_casual_angry
 
 "The boys all run towards Sai"
 
-show sai_casual_sad at middle
+show sai_casual_sad
 s "Ah!"
 hide sai_casual_sad
 
-show drishti at middle
+show drishti
 "Unknown" "Hey! What do you think you are doing!?"
 hide drishti
-show sai_casual at middle
+show sai_casual
 s "Drishti!"
 hide sai_casual
-show vinay_casual_angry at rightmost
+show vinay_casual_angry at right
 v "Drishti, what are y'all doing on my street. Are you looking for a beating? "
 hide vinay_casual_angry
-show drishti at leftmost
+show drishti at left
 d "You? Beat me? Unlikely, we would beat you all in an instant. "
 hide drishti
-show vinay_casual_angry at rightmost
+show vinay_casual_angry at right
 v "Oh yeah? If only your cricket skills were as decent as your trash talking skills."
 
-show drishti at leftmost
+show drishti at left
 d """Well I guess there is only one way to test that.
     Your team vs. mine
     Tomorrow afternoon. Winner takes the lot down the street, the losers have to admit that they suck.
@@ -228,18 +219,18 @@ hide drishti
 
 "One of Vinay's friends" "Vinay, that's our lot!"
 
-show drishti at middle
+show drishti
 d "Don’t tell me you’re scared you’ll lose?"
 hide drishti
-show vinay_casual_angry at rightmost
+show vinay_casual_angry at right
 v "I’d never lose to you, you're on!"
 hide vinay_casual_angry
 
-show drishti at middle
+show drishti
 d "See you tomorrow,  let’s go boys! Sai come on."
 hide drishti
 
-show sai_casual_sad at middle
+show sai_casual_sad
 s "Sorry Nirav,I guess I'll see you tomorrow."
 hide sai_casual_sad
 
