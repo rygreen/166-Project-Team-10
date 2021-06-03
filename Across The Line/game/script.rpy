@@ -9,5 +9,5 @@ define e = Character("Eileen")
 # The game starts here.
 
 label start:
-
+    play music "audio/background.mp3"
     jump act1
