@@ -100,26 +100,26 @@ label distract:
         "Nirav stares at Sai, trying to think of a way to throw him off his game."
         "He suddenly remembers Sai's uneasiness towards blood when he refused Sai's bandaid yesterday."
         "Nirav bites his hand hard, drawing blood."
-        "Nirav smears his blood all over his hand and the ball, then smiles and gives Sai a little wave. Making sure that he can see the blood"
+        "Nirav smears his blood all over his hand and the ball, then smiles and gives Sai a little wave. Making sure that he can see the blood."
         "Sai pales and looks sick, and cannot bring him to look at the ball."
         "Nirav throws the ball at Sai. And Sai, not wanting contact with the bloodied ball, dodges out of the way and lets the ball hit the wicket."
         "Sai is dismissed from the batting area, since he is now not allowed to score any more runs in the current innings."
         d "Sai!, WHAT THE HELL ARE YOU DOING?"
         "Needless to say, the game progresses smoothly after that."
-        "And Vinay's team easily takes the victory"
+        "And Vinay's team easily takes the victory."
         jump after
     else:
         "Nirav stares at Sai, trying to think of a way to throw him off his game."
         "But nothing seems to come to his mind."
-        "Nirav shouts some taunts at Sai, calling him a loser and lameass"
-        "But Sai seems unaffected"
+        "Nirav shouts some taunts at Sai, calling him a loser and lameass."
+        "But Sai seems unaffected."
         play sound "audio/bat_hit_ball.mp3"
         "However, despite the ineffectiveness of Nirav's taunts, Vinay's team still takes the victory by a narrow margin."
         jump after
 
 label fair:
     $ blood_trick = False
-    "Nirav comtemplates distracting Sai for the victory, but ultimately decides that he does not want to play dirty for his victory"
+    "Nirav comtemplates distracting Sai for the victory, but ultimately decides that he does not want to play dirty for his victory."
     "Nirav bowls the ball at Sai and Sai hits it across the line."
     "Vinay, disappointed at Nirav's inaction, decides to take a few jabs at unnerving Sai."
     v "Hey Sai, you ever think about what Drishti will do you guys if you lose?"
@@ -128,7 +128,7 @@ label fair:
     v "You'll never get to play cricket again."
     "But despite Vinay's tauntings, Sai remains unwavered."
     play sound "audio/bat_hit_ball.mp3"
-    "Luckily for Vinay, the game turned out in his favor after all"
+    "Luckily for Vinay, the game turned out in his favor after all."
     "Even by a small margin."
     jump after
 
