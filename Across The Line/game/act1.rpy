@@ -36,11 +36,12 @@ hide crowd1
 show crowd2 with fade
 hide crowd2
 show Nirav
-n "Mom? Dad?"
+n "Mom? Dad? Where are you?"
 scene black
-"Unknown Voice: Got it."
+"Unknown Voice: Got the kid."
+"Unknown Voice: Hurry up. let's go."
 scene inside vehicle
-"Nirav wakes up in a vehicle in panic."
+"Nirav wakes up in a vehicle."
 menu:
     "(Ask)Who are you?":
         "Nirav's voice wakes up the man who is sleeping and was knocked out again."
