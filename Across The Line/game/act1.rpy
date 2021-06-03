@@ -10,8 +10,8 @@ define u = Character("Unknown Man2")
 define w = Character("Waiter")
 define k = Character("Kid")
 
-image crowd1 = "crowd1.png"
-image crowd2 = "crowd2.png"
+image crowd1 = im.Scale("crowd1.png", 800, 600)
+image crowd2 = im.Scale("crowd2.png", 800, 600)
 image waiter = "waiter.png"
 image unknown man1 = "unknown man1.png"
 image unknown man2 = "unknown man2.png"
@@ -31,9 +31,9 @@ image black = im.Scale("black.png", 1280, 720)
 
 label act1:
 scene square
-show crowd1
+show crowd1 with fade
 hide crowd1
-show crowd2
+show crowd2 with fade
 hide crowd2
 show Nirav
 n "Mom? Dad?"
