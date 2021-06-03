@@ -11,7 +11,7 @@ define d = Character("Drishti")
 image lot = "cricketLot.png"
 image vNormal = "vinayBaseball.png"
 image vYell = "vinayBaseballAngry.png"
-image drish = "drishCasual.png"
+image drishti3 = "drishCasual.png"
 image sai = "saiCasual.png"
 image nirav = "niravSad.png"
 
@@ -122,7 +122,7 @@ label practice_over:
     v "It’s Drishti and his team!"
     hide vYell
 
-    show drish at right
+    show drishti3 at right
     "Drishti walks up with his team sporting a sly grin."
     d "I see you guys just finished practicing, you’re gonna need lots more if you think you can beat us."
 
@@ -130,7 +130,7 @@ label practice_over:
     v "Yeah right, Drishti! You’re only here cuz you are scared and needed to scout us out. Get out of here, this is still our lot and always will be!"
 
     d "Is that so? I guess we will see tomorrow."
-    hide drish
+    hide drishti3
     "Drishti laughs and his gang starts to walk away."
     hide vYell
 
