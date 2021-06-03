@@ -71,11 +71,15 @@ hide unknown man2
 "Shouts from far away"
 show unknown man1
 m "Hey man, don’t rush me!"
+hide unknown man1
 show unknown man2
 u "Why don’t you hurry the hell up then"
+hide unknown man2
+show unknown man1
 m "Shouldn’t you be watching the kid?"
-u "Don’t worry about him, he’s knocked out cold."
 hide unknown man1
+show unknown man2
+u "Don’t worry about him, he’s knocked out cold."
 hide unknown man2
 show Nirav
 n "It’s my only chance…"
@@ -134,7 +138,6 @@ hide Vinay1
 show Nirav
 n "My name is Nirav!"
 hide Nirav
-hide cricketlot
 
 
 jump act2
