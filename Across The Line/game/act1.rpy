@@ -37,7 +37,7 @@ show crowd2 with fade
 hide crowd2
 show Nirav
 n "Mom? Dad? Where are you?"
-scene black
+scene black with vpunch
 "Unknown Voice: Got the kid."
 "Unknown Voice: Hurry up. let's go."
 scene inside vehicle
