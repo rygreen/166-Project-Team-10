@@ -7,14 +7,31 @@ define v = Character("Vinay")
 define s = Character("Sai")
 define d = Character("Drishti")
 
+image lot = "cricketLot.png"
+image closedlot = "closedLot.png"
+image vangry = "vinayCasualAngry.png"
+image basesai = "saiBaseball.png"
+image nbasenormal = "niravBaseball.png"
+image Vinay = "vinayBaseball.png"
+image VinayAngry = "vinayBaseballAngry.png"
+image Boy = "Rando.png"
+image drish = "drishBaseball.png"
 # The game starts here.
 
 label act4:
+scene lot
+show nbasenormal
 "Nirav arrives at the cricket lot with his newfound friends."
+show basesai at left
 "He notices Sai walking towards the lot with Drishti and a group of boys."
-
+show Vinay at right
 v "Alright Nirav, you'll be the batsman this half. Go get'em."
+hide basesai
+hide Vinay
+hide nbasenormal
+show nbasenormal at right
 "Nirav steps up to the batting area."
+show Boy at left
 "Boy" "Hey you, haven't seen you around these parts before. You new here?"
 menu:
     "Not too new to beat your ass!":
@@ -50,17 +67,24 @@ label pitch:
 n "That was some pitch huh"
 "Boy" "ARGH, just you wait!"
 
-
+hide nbasenormal
+hide Boy
 "The game proceeds, Nirav scores easy runs while Drishti shouts at his teammates"
+show drish
 d "You idiots! Stop losing to this damn noobie!"
 d "I'll beat all of you to a pulp if you lose this game for me!"
-
+hide drish
+show nbasenormal
+show Vinay at right
 "As the ball flies through the air and the bat switches sides. Vinay pulls Nirav to the side."
 v "Hey, I've been watching that Sai guy, and I think he's our key to victory."
 v "We might be ahead in points right now, but he could let them catch up at any moment."
 v "He's good, but not strong mentally."
 v "Get him to crack, and this will be our game."
-
+hide Vinay
+hide nbasenormal
+show nbasenormal at left
+show basesai at right
 "Nirav steps up to the bowler position, preparing to throw"
 
 menu:
@@ -105,4 +129,6 @@ label fair:
     jump after
 
 label after:
+    hide basesai
+    hide nbasenormal
     jump act5

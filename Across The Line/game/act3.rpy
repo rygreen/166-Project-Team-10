@@ -26,6 +26,8 @@ label act3:
 
     $ practice_time = 120
 
+    $ traitsNum = [0, 0, 0, 0]
+
     menu:
         "Yes":
             show vNormal
@@ -35,7 +37,12 @@ label act3:
             jump practice
         "No":
             show vNormal
-            v "Explains cricket"
+            v "Well let me tell you how it works."
+            v "Two teams take turns between fielding and batting."
+            v "The team that is battting tries to score runs by hitting the ball that is bowled to them and then running to the wicket on the opposite side."
+            v "The fielding team can get the batters out by catching the ball or hitting the wicket before they reach the other side."
+            v "The team with the most runs wins the game."
+            v "Now that you know how to play, lets get to practicing!"
             v "We only have 2 hours to practice before we have to get out of here. What do you want to work on first?"
             hide vNormal
             jump practice
@@ -48,8 +55,9 @@ label practice:
             hide vYell
             "The boys take turns batting after each other."
             "As the practice goes on, Nirav already feels like he's getting better at batting. After 30 minutes goes by, Vinay calls the gang in to see what they are doing next."
-            $ previous_time = practice_time;
-            $ practice_time = (previous_time - 30);
+            $ previous_time = practice_time
+            $ practice_time = (previous_time - 30)
+            $ traitsNum = [traitsNum[0] + 1, traitsNum[1], traitsNum[2], traitsNum[3]]
             if practice_time > 0:
                 jump practice
             jump practice_over
@@ -59,8 +67,9 @@ label practice:
             hide vYell
             "Vinay hits balls into the field as the boys run to catch and field to get quicker at beating the runners."
             "As the practice goes on, Nirav feels ready for fielding in the big game. After 30 minutes goes by, Vinay calls the gang in to see what they are doing next."
-            $ previous_time = practice_time;
-            $ practice_time = (previous_time - 30);
+            $ previous_time = practice_time
+            $ practice_time = (previous_time - 30)
+            $ traitsNum = [traitsNum[0], traitsNum[1] + 1, traitsNum[2], traitsNum[3]]
             if practice_time > 0:
                 jump practice
             jump practice_over
@@ -70,8 +79,9 @@ label practice:
             hide vYell
             "The boys take turns bowling and seeing who can throw the fastest."
             "Nirav gives it a shot, feeling confident if he gets called in for the game. After 30 minutes goes by, Vinay calls the gang in to see what they are doing next."
-            $ previous_time = practice_time;
-            $ practice_time = (previous_time - 30);
+            $ previous_time = practice_time
+            $ practice_time = (previous_time - 30)
+            $ traitsNum = [traitsNum[0], traitsNum[1], traitsNum[2] + 1, traitsNum[3]]
             if practice_time > 0:
                 jump practice
             jump practice_over
@@ -81,13 +91,26 @@ label practice:
             hide vYell
             "The boys race each other up and down the field to see who can run the fastest and the longest."
             "Nirav feels ready to give it his all in the big game, even though he is worn out now. After 30 minutes goes by, Vinay calls the gang in to see what they are doing next."
-            $ previous_time = practice_time;
-            $ practice_time = (previous_time - 30);
+            $ previous_time = practice_time
+            $ practice_time = (previous_time - 30)
+            $ traitsNum = [traitsNum[0], traitsNum[1], traitsNum[2], traitsNum[3] + 1]
             if practice_time > 0:
                 jump practice
             jump practice_over
 
 label practice_over:
+
+    $ best_trait = 0
+    $ x = 0
+
+    while x < 4:
+        $ currBest = 0
+        if traitsNum[x] > currBest:
+            $ currBest = traitsNum[x]
+            $ best_trait = x + 1
+        $ x = x + 1
+
+
     "All the boys gather together after practicing for the last 2 hours."
     show vNormal
     v "I know you guys might be tired now, but I hope you feel ready for the big game tomorrow. We need to win this, the lot is on the line!"
